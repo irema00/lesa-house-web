@@ -12,7 +12,7 @@
   display: grid;
   place-items: center;
   padding: clamp(28px, 5vh, 56px) clamp(18px, 4vw, 32px);
-  background: #f4f1ec;
+  background: #faf8f5;
   position: relative;
   overflow: hidden;
 }
