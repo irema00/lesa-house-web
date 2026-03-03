@@ -1,9 +1,19 @@
 "use client";
 import styles from "./page.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Home() {
   const [lang, setLang] = useState<"tr" | "en">("en");
+  useEffect(() => {
+    const savedLang = localStorage.getItem("lang");
+    if (savedLang === "tr" || savedLang === "en") {
+      setLang(savedLang);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("lang", lang);
+  }, [lang]);
   return (
     <main className={styles.page}>
       <div className={styles.frame} />
