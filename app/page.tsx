@@ -14,7 +14,12 @@ export default function Home() {
       <div className={styles.content}>
         <p className={styles.eyebrow}>İZMİR • Bostanlı</p>
 
-        <h1 className={styles.title}>LESA HOUSE</h1>
+        <img
+          src="/lesahouselogo.svg"
+          alt="Lesa House"
+          className={styles.logo}
+          draggable={false}
+        />
 
         <p className={styles.subtitle}>
           A boutique event house designed for special moments.
