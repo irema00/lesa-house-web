@@ -1,16 +1,29 @@
-import type { Metadata } from "next";
+"use client";
 import styles from "./page.module.css";
-
-export const metadata: Metadata = {
-  title: "Lesa House | Coming Soon",
-  description:
-    "Lesa House is a boutique event house in İzmir, Bostanlı. Coming soon.",
-};
+import { useState } from "react";
 
 export default function Home() {
+  const [lang, setLang] = useState<"tr" | "en">("en");
   return (
     <main className={styles.page}>
       <div className={styles.frame} />
+      <div className={styles.langSwitch}>
+        <button
+          type="button"
+          onClick={() => setLang("tr")}
+          className={lang === "tr" ? styles.activeLang : undefined}
+        >
+          TR
+        </button>
+        <span aria-hidden="true">|</span>
+        <button
+          type="button"
+          onClick={() => setLang("en")}
+          className={lang === "en" ? styles.activeLang : undefined}
+        >
+          EN
+        </button>
+      </div>
       <div className={styles.content}>
         <p className={styles.eyebrow}>İZMİR • Bostanlı</p>
 
@@ -22,15 +35,19 @@ export default function Home() {
         />
 
         <p className={styles.subtitle}>
-          A boutique event house designed for special moments.
+          {lang === "en"
+            ? "A boutique event house designed for special moments."
+            : "Özel anlar için tasarlanmış butik bir etkinlik evi."}
         </p>
-        <p className={styles.comingSoon}>Coming soon.</p>
+        <p className={styles.comingSoon}>
+          {lang === "en" ? "Coming soon." : "Çok yakında."}
+        </p>
         <div className={styles.actions}>
           <a
             className={styles.primaryCta}
             href="mailto:rezervasyon@lesahouse.com"
           >
-            RESERVATION REQUEST
+            {lang === "en" ? "Reservation Request" : "Rezervasyon Ön Talep"}
           </a>
 
           <a
