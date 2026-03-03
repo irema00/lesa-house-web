@@ -210,4 +210,8 @@
   .comingSoon {
     font-size: 14px;
   }
+  .primaryCta {
+    width: auto;
+    max-width: 260px;
+  }
 }
