@@ -61,7 +61,7 @@ export default function Home() {
             className={styles.primaryCta}
             href="mailto:rezervasyon@lesahouse.com"
           >
-            {lang === "en" ? "Reservation" : "Rezervasyon"}
+            {lang === "en" ? "RESERVATION" : "REZERVASYON"}
           </a>
 
           <a
