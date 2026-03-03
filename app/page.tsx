@@ -26,6 +26,23 @@ export default function Home() {
           <br />
           <span>Coming soon.</span>
         </p>
+        <div className={styles.actions}>
+          <a
+            className={styles.primaryCta}
+            href="mailto:rezervasyon@lesahouse.com"
+          >
+            RESERVATION REQUEST
+          </a>
+
+          <a
+            className={styles.secondaryLink}
+            href="https://instagram.com/lesa.house"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Instagram
+          </a>
+        </div>
       </div>
     </main>
   );

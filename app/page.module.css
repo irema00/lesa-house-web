@@ -40,7 +40,7 @@
   position: relative;
   z-index: 1;
   animation: reveal 700ms ease-out both;
-  padding: 60px 0;
+  padding: 60px 24px;
 }
 
 .eyebrow {
@@ -92,4 +92,42 @@
   margin: 0 auto 80px;
   margin-top: 100px;
   margin-bottom: 100px;
+}
+.actions {
+  margin-top: 36px;
+  display: grid;
+  gap: 14px;
+  justify-items: center;
+}
+
+.primaryCta {
+  border: 1px solid #1a1a1a;
+  padding: 12px 20px;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  background: transparent;
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.primaryCta:hover {
+  background: #1a1a1a;
+  color: #f4f1ec;
+}
+
+.secondaryLink {
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 78vw;
+  }
 }
