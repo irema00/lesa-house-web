@@ -23,9 +23,8 @@ export default function Home() {
 
         <p className={styles.subtitle}>
           A boutique event house designed for special moments.
-          <br />
-          <span>Coming soon.</span>
         </p>
+        <p className={styles.comingSoon}>Coming soon.</p>
         <div className={styles.actions}>
           <a
             className={styles.primaryCta}

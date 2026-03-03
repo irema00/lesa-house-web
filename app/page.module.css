@@ -52,15 +52,25 @@
 }
 
 .title {
-  margin: 16px 0;
-  letter-spacing: 0.22em;
+  margin: 16px 32;
+  letter-spacing: 0.24em;
 }
 
 .subtitle {
   opacity: 0.8;
   line-height: 1.7;
+  margin-top: 10px;
+  max-width: 52ch;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
 }
-
+.comingSoon {
+  margin-top: 14px;
+  opacity: 0.75;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+}
 .frame {
   position: fixed;
   inset: 24px;
