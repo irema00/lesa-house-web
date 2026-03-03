@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className={styles.page}>
+      <div className={styles.frame} />
       <div className={styles.content}>
         <p className={styles.eyebrow}>İZMİR • Bostanlı</p>
 

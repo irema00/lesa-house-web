@@ -28,3 +28,10 @@
   opacity: 0.8;
   line-height: 1.7;
 }
+
+.frame {
+  position: fixed;
+  inset: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+}
