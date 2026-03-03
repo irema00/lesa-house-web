@@ -43,6 +43,9 @@ export default function Home() {
           </a>
         </div>
       </div>
+      <footer className={styles.footer}>
+        © {new Date().getFullYear()} Lesa House
+      </footer>
     </main>
   );
 }
