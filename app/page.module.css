@@ -63,7 +63,7 @@
   opacity: 0.7;
   font-size: clamp(10px, 1.1vw, 11px);
   margin-bottom: 28px;
-  color: rgba(0, 0, 0, 0.55);
+  color: #6a6a6a;
 }
 
 .title {
@@ -72,7 +72,7 @@
 }
 
 .subtitle {
-  opacity: 0.8;
+  color: #3a3a3a;
   line-height: 1.7;
   margin-top: 10px;
   max-width: 52ch;
@@ -81,8 +81,8 @@
   font-size: clamp(14px, 1.6vw, 16px);
 }
 .comingSoon {
+  color: #555555;
   margin-top: clamp(10px, 2vh, 16px);
-  opacity: 0.75;
   font-size: clamp(13px, 1.4vw, 15px);
   letter-spacing: 0.08em;
 }
