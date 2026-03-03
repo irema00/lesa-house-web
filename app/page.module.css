@@ -74,7 +74,7 @@
 .frame {
   position: absolute;
   inset: 24px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.12);
   pointer-events: none;
 }
 
@@ -103,13 +103,14 @@
   background: transparent;
   color: #1a1a1a;
   text-decoration: none;
-  transition: background 200ms ease, color 200ms ease, letter-spacing 200ms ease;
+  transition: all 220ms ease;
 }
 
 .primaryCta:hover {
-  background: rgba(0, 0, 0, 0.85);
+  background: #1a1a1a;
   color: #f4f1ec;
   letter-spacing: 0.32em;
+  transform: translateY(-1px);
 }
 
 .secondaryLink {
@@ -130,7 +131,7 @@
   font-size: 10px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.35);
 }
 
 @keyframes reveal {
