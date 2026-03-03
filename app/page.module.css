@@ -9,8 +9,10 @@
 }
 .page {
   min-height: 100vh;
-  display: grid;
+  display: flex;
   place-items: center;
+  flex-direction: column;
+  justify-content: space-between;
   padding: clamp(28px, 5vh, 56px) clamp(18px, 4vw, 32px);
   background: #faf8f5;
   position: relative;
@@ -44,13 +46,15 @@
 }
 
 .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  max-width: 820px;
-  width: 100%;
   position: relative;
   z-index: 1;
   animation: reveal 700ms ease-out both;
-  padding: clamp(42px, 7vh, 72px) clamp(18px, 3vw, 32px);
+  padding: clamp(28px, 4vh, 48px) clamp(18px, 3vw, 32px);
 }
 
 .eyebrow {
@@ -90,12 +94,12 @@
 }
 
 .logo {
-  width: min(680px, 90vw);
+  width: min(640px, 82vw);
   height: auto;
   display: grid;
-  margin: 0 auto 80px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin: 48px auto 48px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 .actions {
   margin-top: 36px;
@@ -138,10 +142,7 @@
   letter-spacing: 0.2em;
 }
 .footer {
-  position: absolute;
   bottom: 28px;
-  left: 0;
-  width: 100%;
   text-align: center;
   font-size: 10px;
   letter-spacing: 0.18em;
