@@ -72,6 +72,10 @@ export default function Home() {
           >
             Instagram
           </a>
+          <p className={styles.contact}>
+            {lang === "en" ? "Contact: " : "İletişim: "}
+            <a href="mailto:info@lesahouse.com">info@lesahouse.com</a>
+          </p>
         </div>
       </div>
       <footer className={styles.footer}>
