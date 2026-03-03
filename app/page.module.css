@@ -63,36 +63,19 @@
   max-width: 52ch;
   margin-left: auto;
   margin-right: auto;
-  font-size: 15px;
+  font-size: 14px;
 }
 .comingSoon {
   margin-top: 14px;
   opacity: 0.75;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 0.08em;
 }
 .frame {
-  position: fixed;
+  position: absolute;
   inset: 24px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   pointer-events: none;
-}
-
-@keyframes reveal {
-  from {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .content {
-    animation: none;
-  }
 }
 
 .logo {
@@ -105,9 +88,10 @@
 }
 .actions {
   margin-top: 36px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 14px;
-  justify-items: center;
 }
 
 .primaryCta {
@@ -136,9 +120,25 @@
   text-decoration: underline;
   text-underline-offset: 6px;
 }
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-@media (max-width: 480px) {
-  .logo {
-    width: 78vw;
+@media (prefers-reduced-motion: reduce) {
+  .content {
+    animation: none;
+  }
+}
+@media (min-width: 1024px) {
+  .actions {
+    flex-direction: row;
+    justify-content: center;
   }
 }
