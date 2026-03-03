@@ -21,7 +21,9 @@ export default function Home() {
         <button
           type="button"
           onClick={() => setLang("tr")}
-          className={lang === "tr" ? styles.activeLang : undefined}
+          className={`${styles.langBtn} ${
+            lang === "tr" ? styles.activeLang : ""
+          }`}
         >
           TR
         </button>
@@ -29,7 +31,9 @@ export default function Home() {
         <button
           type="button"
           onClick={() => setLang("en")}
-          className={lang === "en" ? styles.activeLang : undefined}
+          className={`${styles.langBtn} ${
+            lang === "en" ? styles.activeLang : ""
+          }`}
         >
           EN
         </button>
